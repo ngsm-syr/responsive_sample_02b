@@ -114,6 +114,12 @@ nav {
   transform: rotate(-45deg);
 }
 
+#navBtn:checked + .open span,
+#navBtn:checked + .open::before,
+#navBtn:checked + .open::after {
+  border-bottom-color: #EEE;
+}
+
 nav ul {
   list-style: none;
   padding-bottom: 1rem;
@@ -129,7 +135,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: #333;
+  color: #EEE;
 }
 
 /* main contents */
@@ -187,6 +193,10 @@ footer {
   
   nav ul li {
     display: inline-block;
+  }
+
+  nav ul li a {
+    color: #333;
   }
 
   #navBtn,
